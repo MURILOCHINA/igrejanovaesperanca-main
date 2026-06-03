@@ -10,13 +10,6 @@ export default defineConfig({
     },
   },
   define: {
-    // Isso impede que o código do TanStack quebre ao procurar variáveis globais de servidor
     "process.env": {},
-  },
-  build: {
-    rollupOptions: {
-      // Força o Rollup a ignorar o erro do async_hooks e compilar o resto do código
-      external: ["node:async_hooks"],
-    },
   },
 });
