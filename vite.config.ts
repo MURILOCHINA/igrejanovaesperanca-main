@@ -4,6 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  base: "./", // <--- ADICIONE ESTA LINHA EXATAMENTE AQUI
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -14,7 +15,6 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      // Ignora o erro do async_hooks e força a geração dos arquivos de visualização
       external: ["node:async_hooks"],
     },
   },
