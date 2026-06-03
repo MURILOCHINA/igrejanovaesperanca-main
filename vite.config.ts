@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "./", // <--- ADICIONE ESTA LINHA EXATAMENTE AQUI
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -12,10 +12,5 @@ export default defineConfig({
   },
   define: {
     "process.env": {},
-  },
-  build: {
-    rollupOptions: {
-      external: ["node:async_hooks"],
-    },
   },
 });
