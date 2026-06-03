@@ -1,0 +1,5 @@
+[
+  { "id": 1, "evento": "Culto de Celebração", "dia": "Domingo", "horario": "19:00", "responsavel": "Pastor Principal" },
+  { "id": 2, "evento": "Estudo Bíblico", "dia": "Quarta-feira", "horario": "20:00", "responsavel": "Presbítero Carlos" },
+  { "id": 3, "evento": "Reunião de Jovens", "dia": "Sábado", "horario": "18:30", "responsavel": "Líder Amanda" }
+]
